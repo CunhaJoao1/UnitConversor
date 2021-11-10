@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle&family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Conversor</title>
+</head>
+<body>
+    <header id="header">
+        <nav class="container">
+            <div class="logo"><h2>Conversor de medidas</h2></div>
+            <div class="menu"></div>
+        </nav>
+    </header>
+    <main>
+        <section class="section" id="title">
+
+            <div class="container">
+                <div class="text">
+                    <p>Bem vindo ao conversor de medidas. <br> Abaixo escolha a conversão a ser feita. :)</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="home">
+            <div class="container">
+                <div class="conversao">
+                    <div class="text">
+                        <p>Converter de:</p>
+                    </div>
+                    <div class="custom-select">
+
+                        <select name="teste" class="valor1" id="primeira-medida">
+                            <option value="mtr">Metros</option>
+                            <option value="mlh">Milhas</option>
+                            <option value="pol">Polegadas</option>
+                        </select>
+
+                    </div>
+                    <input type="number" class="medida1-txt" id="inputNum"  placeholder="Valor">
+                    
+                    <!--Segundo VALOR-->
+                    <div class="text">
+                        <p>Para:</p>
+                    </div>
+                    <div class="custom-select">
+
+                        <select name="teste" class="valor2" id="segunda-medida">
+                            <option value="mlh2">Milhas</option>
+                            <option value="mtr2">Metros</option>
+                            <option value="pol2">Polegadas</option>
+                        </select>
+
+                    </div>
+                    <button class="button" onclick="converter()"> Conveter</button>
+                    <!-- <div class="button">Conveter</div>-->
+                    <div class="resultado">Reultado!</div>
+                   
+                </div> <!--Conversao-->
+            </div>
+        </section>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>

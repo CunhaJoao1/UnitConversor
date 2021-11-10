@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font: 400 0.9rem 'Press Start 2P', cursive;
+    color: aliceblue;
+}
+main{
+    margin-top: 6rem;
+}
+body{
+    background: #515585;
+}
+.section{
+    margin-bottom: 5rem;
+}
+h2{
+    font: 400 1rem 'Press Start 2P', cursive;
+}
+#header{
+    height: 4.5rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    background: #515585;
+    box-shadow: 1px 0.3px 15px #32407B;
+    display: flex;
+    align-items: center;
+
+    z-index: 100;
+}
+.container{
+    margin: 0 1rem;
+}
+#title .text{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+#title .text p{
+    display: flex;
+    text-align: center;
+    width: 90vw;
+
+    font-size: 0.8rem;
+}
+
+#home .conversao{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+#home .text{
+    margin-bottom: .5rem;
+}
+#primeira-medida, #segunda-medida {
+    background: #32407B;
+    height: 2rem;
+    box-shadow: none;
+    border: none;
+
+    border-radius: .25rem;
+
+    cursor: pointer;
+
+    margin-bottom: .5rem;
+}
+#primeira-media option{
+    border-radius: none;
+}
+
+#home .medida1-txt, .medida2-txt{
+    width: 10rem;
+    height: 5rem;
+    color: black;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.button{
+    background: #46B5D1 ;
+    border: none;
+    padding: .5rem;
+    border-radius: .25rem;
+    margin-bottom: 1rem;
+
+    cursor: pointer;
+    transition: background .3s;
+}
+.button:hover{
+    background: #5bc2db ;
+
+}
+.resultado{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
